@@ -61,7 +61,7 @@ export const handleSignOut = () => {
                 success: false
             }
             return signOutUser;
-            console.log(res);
+            // console.log(res);
         })
         // .catch(err => {
 
