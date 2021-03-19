@@ -9,7 +9,7 @@ import { useHistory, useLocation } from "react-router";
 import { createUserWithEmailAndPassword, handleGoogleSignIn, initializeLoginFramework, signInWithEmailAndPassword } from './loginManager';
 
 const Login = () => {
-    const { register, watch, errors } = useForm();
+    const { register, errors } = useForm();
     const [newUser, setNewUser] = useState(false);
   const [user, setUser] = useState({
     isSignedIn: false,
@@ -21,7 +21,7 @@ const Login = () => {
 
   initializeLoginFramework();
 
-  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [ setLoggedInUser] = useContext(UserContext);
   const history = useHistory();
   const location = useLocation();
   let { from } = location.state || { from: { pathname: "/" } };

@@ -1,4 +1,3 @@
-import React from 'react';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
@@ -37,16 +36,15 @@ export const handleFbSignIn = () => {
         .auth()
         .signInWithPopup(fbProvider)
         .then((result) => {
-            var credential = result.credential;
             var user = result.user;
             user.success=true;
             return user;
         })
         .catch((error) => {
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            var email = error.email;
-            var credential = error.credential;
+            // var errorCode = error.code;
+            // var errorMessage = error.message;
+            // var email = error.email;
+            // var credential = error.credential;
         });
 
 }
@@ -65,9 +63,9 @@ export const handleSignOut = () => {
             return signOutUser;
             console.log(res);
         })
-        .catch(err => {
+        // .catch(err => {
 
-        })
+        // })
 }
 
 export const createUserWithEmailAndPassword = (name,email,password) => {
