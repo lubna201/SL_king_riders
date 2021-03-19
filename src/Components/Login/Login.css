@@ -1,0 +1,31 @@
+.loginPage{
+    margin-top: 100px;
+    width:50%;
+    background-color: azure;
+    border: 2px solid red;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 25%;
+    text-align: center;
+}
+.loginPage button{
+    border-radius: 10px;
+    border:2px solid red;
+    width:85%;
+    height:50px;
+    justify-content: center;
+    margin: 20px;
+}
+.ship-form{
+    justify-content: center;
+}
+.ship-form input{
+    border-radius: 10px;
+    padding:10px;
+    border:2px solid red;
+    width:85%;
+    height:50px;
+    justify-content: center;
+    margin: 20px;
+}

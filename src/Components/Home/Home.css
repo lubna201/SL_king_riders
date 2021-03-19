@@ -1,0 +1,12 @@
+.team{
+    display:flex;
+}
+body{
+    background-image: url("https://i.pinimg.com/originals/f0/54/83/f05483028878fe9037a6d2f0d46444d5.png");
+}
+.design{
+    margin: 20px;
+}
+.col{
+    align-items: center;
+}
