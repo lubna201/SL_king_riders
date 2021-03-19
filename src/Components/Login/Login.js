@@ -1,4 +1,3 @@
-import firebase from "firebase/app";
 import React, { useContext, useState } from 'react';
 import { UserContext } from "../../App";
 import "firebase/auth";
@@ -7,10 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons'
 import { useForm } from 'react-hook-form';
 import { useHistory, useLocation } from "react-router";
-import { createUserWithEmailAndPassword, handleGoogleSignIn, handleSignOut, initializeLoginFramework, signInWithEmailAndPassword } from './loginManager';
+import { createUserWithEmailAndPassword, handleGoogleSignIn, initializeLoginFramework, signInWithEmailAndPassword } from './loginManager';
 
 const Login = () => {
-    const { register, watch, errors } = useForm();
+    const { register,  errors } = useForm();
     const [newUser, setNewUser] = useState(false);
   const [user, setUser] = useState({
     isSignedIn: false,
@@ -39,6 +38,7 @@ const Login = () => {
     setLoggedInUser(res);
     if (redirect) {
       history.replace(from);
+      console.log(loggedInUser);
     }
   }
 
