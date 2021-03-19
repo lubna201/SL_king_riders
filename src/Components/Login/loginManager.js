@@ -10,7 +10,6 @@ export const initializeLoginFramework = () => {
 
 export const handleGoogleSignIn = () => {
     const googleProvider = new firebase.auth.GoogleAuthProvider();
-    // console.log("Clicked");
     return firebase.auth().signInWithPopup(googleProvider)
         .then(res => {
             const { displayName, photoURL, email } = res.user;
@@ -22,7 +21,6 @@ export const handleGoogleSignIn = () => {
                 success:true
             }
             return signedInUser;
-            // console.log(displayName, photoURL, email);
         })
         .catch(err => {
             console.log(err);
