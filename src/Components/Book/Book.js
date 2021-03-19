@@ -2,7 +2,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import React from 'react';
 import { useParams } from 'react-router';
 import './Book.css'
-import { GoogleMap, useJsApiLoader, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCarAlt, faBus, faMotorcycle, faUserFriends ,faTrain} from '@fortawesome/free-solid-svg-icons'
 

@@ -22,7 +22,7 @@ export const handleGoogleSignIn = () => {
                 success:true
             }
             return signedInUser;
-            console.log(displayName, photoURL, email);
+            // console.log(displayName, photoURL, email);
         })
         .catch(err => {
             console.log(err);
@@ -40,12 +40,12 @@ export const handleFbSignIn = () => {
             user.success=true;
             return user;
         })
-        .catch((error) => {
-            // var errorCode = error.code;
-            // var errorMessage = error.message;
-            // var email = error.email;
-            // var credential = error.credential;
-        });
+        // .catch((error) => {
+        //     // var errorCode = error.code;
+        //     // var errorMessage = error.message;
+        //     // var email = error.email;
+        //     // var credential = error.credential;
+        // });
 
 }
 

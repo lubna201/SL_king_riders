@@ -34,7 +34,7 @@ const Home = () => {
         <Container className="detail">
             <Row style={style} className="team">
                 {
-                    transports.map(transport => <Transport key={transport.title, transport.imgUrl} transport={transport} className="design"></Transport>)
+                    transports.map(transport => <Transport key={transport.title} transport={transport} className="design"></Transport>)
                 }
             </Row>
         </Container>
