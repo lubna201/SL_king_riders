@@ -1,0 +1,80 @@
+[debug] [2021-03-20T13:31:14.244Z] ----------------------------------------------------------------------
+[debug] [2021-03-20T13:31:14.253Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lubna\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-03-20T13:31:14.254Z] CLI Version:   9.6.1
+[debug] [2021-03-20T13:31:14.254Z] Platform:      win32
+[debug] [2021-03-20T13:31:14.255Z] Node Version:  v13.14.0
+[debug] [2021-03-20T13:31:14.257Z] Time:          Sat Mar 20 2021 19:31:14 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-03-20T13:31:14.257Z] ----------------------------------------------------------------------
+[debug] [2021-03-20T13:31:14.258Z] 
+[debug] [2021-03-20T13:31:14.265Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-03-20T13:31:14.308Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-20T13:31:14.309Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  H:\WEB-DEVELOPMENT\Projects\9th mileston\sl-king-riders
+
+[debug] [2021-03-20T13:31:15.328Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-03-20T13:31:15.328Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-03-20T13:32:34.282Z] > refreshing access token with scopes: []
+[debug] [2021-03-20T13:32:34.284Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-20T13:32:34.564Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 20 Mar 2021 13:32:51 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-20T13:32:34.573Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-03-20T13:32:35.150Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-03-20T13:32:35.150Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project sl-king-riders (sl-king-riders) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote build/404.html 
+[debug] [2021-03-20T13:36:57.707Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-03-20T13:36:57.964Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-03-20T13:36:57.965Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.3.1","browserURL":"https://www.gstatic.com/firebasejs/8.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.3.1/firebase.tgz"},"live":{"version":"8.3","browserURL":"https://www.gstatic.com/firebasejs/live/8.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.3.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.3.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.3.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.3.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at H:\WEB-DEVELOPMENT\Projects\9th mileston\sl-king-riders 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=466796329&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-03-20T13:37:31.334Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"f84bc8cefd166cdfa439","redirect_uri":"http://localhost:9005","state":"466796329"}
+[debug] [2021-03-20T13:37:31.925Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Sat, 20 Mar 2021 13:37:48 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"755a0e14cf4c86fa3136e8be3a14d6e5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-6832eced.js gist.github.com/socket-worker-6832eced.js","x-github-request-id":"2289:650F:26111B:27CCD5:6055FAAB"}
+[debug] [2021-03-20T13:37:31.941Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-03-20T13:37:32.549Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-03-20T13:37:32.550Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"lubna201","id":76748271,"node_id":"MDQ6VXNlcjc2NzQ4Mjcx","avatar_url":"https://avatars.githubusercontent.com/u/76748271?v=4","gravatar_id":"","url":"https://api.github.com/users/lubna201","html_url":"https://github.com/lubna201","followers_url":"https://api.github.com/users/lubna201/followers","following_url":"https://api.github.com/users/lubna201/following{/other_user}","gists_url":"https://api.github.com/users/lubna201/gists{/gist_id}","starred_url":"https://api.github.com/users/lubna201/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lubna201/subscriptions","organizations_url":"https://api.github.com/users/lubna201/orgs","repos_url":"https://api.github.com/users/lubna201/repos","events_url":"https://api.github.com/users/lubna201/events{/privacy}","received_events_url":"https://api.github.com/users/lubna201/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":18,"public_gists":0,"followers":0,"following":0,"created_at":"2020-12-29T18:33:53Z","updated_at":"2021-03-20T13:37:47Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":111712,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as lubna201 
+[info] 
+[debug] [2021-03-20T13:39:57.240Z] >>> [apiv2][query] GET https://api.github.com/repos//Porgramming-Hero-web-course/react-auth-lubna201/actions/secrets/public-key type=owner
+[debug] [2021-03-20T13:39:57.678Z] <<< [apiv2][status] GET https://api.github.com/repos//Porgramming-Hero-web-course/react-auth-lubna201/actions/secrets/public-key 404
+[debug] [2021-03-20T13:39:57.679Z] <<< [apiv2][body] GET https://api.github.com/repos//Porgramming-Hero-web-course/react-auth-lubna201/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-03-20T13:40:25.661Z] >>> [apiv2][query] GET https://api.github.com/repos/Porgramming-Hero-web-course/react-auth-lubna201/actions/secrets/public-key type=owner
+[debug] [2021-03-20T13:40:26.111Z] <<< [apiv2][status] GET https://api.github.com/repos/Porgramming-Hero-web-course/react-auth-lubna201/actions/secrets/public-key 404
+[debug] [2021-03-20T13:40:26.111Z] <<< [apiv2][body] GET https://api.github.com/repos/Porgramming-Hero-web-course/react-auth-lubna201/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-03-20T13:40:38.125Z] >>> [apiv2][query] GET https://api.github.com/repos/react-auth-lubna201/actions/secrets/public-key type=owner
+[debug] [2021-03-20T13:40:38.564Z] <<< [apiv2][status] GET https://api.github.com/repos/react-auth-lubna201/actions/secrets/public-key 404
+[debug] [2021-03-20T13:40:38.564Z] <<< [apiv2][body] GET https://api.github.com/repos/react-auth-lubna201/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-03-20T13:40:45.253Z] >>> [apiv2][query] GET https://api.github.com/repos/hk/actions/secrets/public-key type=owner
+[debug] [2021-03-20T13:40:45.723Z] <<< [apiv2][status] GET https://api.github.com/repos/hk/actions/secrets/public-key 404
+[debug] [2021-03-20T13:40:45.724Z] <<< [apiv2][body] GET https://api.github.com/repos/hk/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}

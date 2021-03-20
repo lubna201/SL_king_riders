@@ -16,28 +16,26 @@ const center = {
     lng: -38.523
 };
 
-
 const Book = (props) => {
     console.log(props);
     const { title } = useParams();
 
+    // const { isLoaded } = useJsApiLoader({
+    //     id: 'google-map-script',
+    //     googleMapsApiKey: "YOUR_API_KEY"
+    // })
 
-    const { isLoaded } = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: "YOUR_API_KEY"
-    })
+    // const [map, setMap] = React.useState(null)
 
-    const [map, setMap] = React.useState(null)
+    // const onLoad = React.useCallback(function callback(map) {
+    //     const bounds = new window.google.maps.LatLngBounds();
+    //     map.fitBounds(bounds);
+    //     setMap(map)
+    // }, [])
 
-    const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds();
-        map.fitBounds(bounds);
-        setMap(map)
-    }, [])
-
-    const onUnmount = React.useCallback(function callback(map) {
-        setMap(null)
-    }, [])
+    // const onUnmount = React.useCallback(function callback(map) {
+    //     setMap(null)
+    // }, [])
 
     function myFunction() {
         console.log('Clicked search');
