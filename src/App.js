@@ -18,7 +18,7 @@ function App() {
       <p>Email : {loggedInUser.email}</p>
       <Router>
         <Header />
-        <p>{loggedInUser.name}</p>
+        <h4>{loggedInUser.name}</h4>
         <Switch>
           <Route path="/home">
             <Home />

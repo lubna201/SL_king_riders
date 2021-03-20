@@ -76,7 +76,7 @@ const Login = () => {
     return (
         <div className="loginPage">
             <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />
-            <label htmlFor="newUser">{newUser ? ' Login' : ' Create an account'}</label>
+            <label htmlFor="newUser">{newUser ? 'Already Have An Account?  Login' : ' Create an account'}</label>
             <h1>{newUser ? 'Create an account' : 'Login'}</h1>
             < form onSubmit={handleSubmitt} className="ship-form">
                 {newUser && < input name="name" placeholder="Your Name" ref={register({ required: true })} onBlur={handleBlur} />}
